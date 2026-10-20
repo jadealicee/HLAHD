@@ -16,7 +16,7 @@ I've sent over an automated Slurm batch pipeline [run_hlahd_cram.sh](https://git
 Setting up your environment (with the yaml file):
 ```
 conda env create -f environment.yaml
-conda activate hlahd_env
+conda activate hlahd
 ```
 ________________________________________________________________________________________________
 
@@ -31,10 +31,11 @@ I  have uploaded the raw files to this repository as a zipped file called [IMGTH
 
 using the raws, the dictionary can be made with this:
 ```
+tar -xzvf IMGTHLA-3150.tar.gz
 python3 bin/hlahd_update.py \
-   -g hla_gen.fasta \
-   -c hla_nuc.fasta \
-   -a align_dir/ \
+   -g IMGTHLA-3150/hla_gen.fasta \
+   -c IMGTHLA-3150/hla_nuc.fasta \
+   -a IMGTHLA-3150/alignments/ \
    -o dictionary315
 ```
 ________________________________________________________________________________________________
