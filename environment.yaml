@@ -1,0 +1,12 @@
+name: hlahd
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - samtools>=1.15
+  - bowtie2>=2.4
+  - perl>=5.26
+  - gcc_linux-64
+  - gxx_linux-64
+  - make
