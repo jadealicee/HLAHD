@@ -14,10 +14,10 @@ ________________________________________________________________________________
 I've sent over an automated Slurm batch pipeline [run_hlahd_cram.sh](https://github.com/jadealicee/HLAHD/blob/main/run_hlahd_cram.sh) for performing high-resolution HLA typing from indexed CRAM files using HLA-HD (v1.7.1) and the IPD-IMGT/HLA v3.15.0 reference database.
 
 Setting up your environment (with the yaml file):
-
+```
 conda env create -f environment.yaml
 conda activate hlahd_env
-
+```
 ________________________________________________________________________________________________
 
 The custom-compiled execution binaries (hla_est, pick_up_allele, sam_to_fastq_reverse, etc.) are pre-compiled and placed inside the bin/ directory of hla-hd. run_hlahd_cram.sh should append the /bin directory to your $PATH. 
@@ -30,18 +30,20 @@ ________________________________________________________________________________
 I  have uploaded the raw files to this repository as a zipped file called [IMGTHLA-3150.tar.gz](https://github.com/jadealicee/HLAHD/blob/main/IMGTHLA-3150.tar.gz). Will take some time to build the dictionary. Any issues and I can send over the pre-indexed version instead.
 
 using the raws, the dictionary can be made with this:
+```
 python3 bin/hlahd_update.py \
    -g hla_gen.fasta \
    -c hla_nuc.fasta \
    -a align_dir/ \
    -o dictionary315
-
+```
 ________________________________________________________________________________________________
 
 
 The script is written for slurm. Currently is used for: MHC region extraction (chr6:28477797-33448354), multithreaded sorting, conversion to paired FASTQ files, HLA-HD typing, temporary file cleanup, and execution metric logging
 
 example of a submission:
+```
 sbatch \
     --cpus-per-task=10 \
     --mem=60G \
@@ -51,7 +53,7 @@ sbatch \
     /path/to/genome_reference.fasta \
     /path/to/output_directory \
     SAMPLE_ID
-
+```
 ensure cram files have matching crai in the same directory
 -t 10 for threads allows for much faster processing
 -m 55 filters out reads < 55bp to reduce ambiguous mapping
