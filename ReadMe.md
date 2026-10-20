@@ -25,9 +25,7 @@ The custom-compiled execution binaries (hla_est, pick_up_allele, sam_to_fastq_re
 ________________________________________________________________________________________________
 
 
-~~Due to legacy server archiving changes on the IPD-IMGT/HLA FTP, the pre-indexed IPD-IMGT/HLA 3.15.0 reference files can be provided from me as a compressed bundle. I've been unable to locate them again on the online archive, so I've zipped up my dictionary and can send it over whenever required (1.8gb zipped, 30gb unzipped).~~ If you can find the ref files yourself, that may be the easiest method, but I've some digging on both their archive and their github and have not been able to locate them. It's the hla_nuc.fasta and the hla_gen.fasta from the 3.15 version which is needed.
-
-I  have uploaded the raw files to this repository as a zipped file called [IMGTHLA-3150.tar.gz](https://github.com/jadealicee/HLAHD/blob/main/IMGTHLA-3150.tar.gz). Will take some time to build the dictionary. Any issues and I can send over the pre-indexed version instead.
+~~Due to legacy server archiving changes on the IPD-IMGT/HLA FTP, the pre-indexed IPD-IMGT/HLA 3.15.0 reference files can be provided from me as a compressed bundle. I've been unable to locate them again on the online archive, so I've zipped up my dictionary and can send it over whenever required (1.8gb zipped, 30gb unzipped).~~ If you can find the ref files yourself, that may be the easiest method, but I've some digging on both their archive and their github and have not been able to locate them. It's the hla_nuc.fasta and the hla_gen.fasta from the 3.15 version which is needed. Because of this, I  have uploaded the raw files to this repository as a zipped file called [IMGTHLA-3150.tar.gz](https://github.com/jadealicee/HLAHD/blob/main/IMGTHLA-3150.tar.gz) for you to use. It will take some time to build the dictionary. Any issues and I can send over the pre-indexed version instead.
 
 using the raws, the dictionary can be made with this:
 ```
