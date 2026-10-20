@@ -1,9 +1,9 @@
 ReadMe
 
-How to download HLA-HD
-'HLA-HD (HLA typing from High-quality Dictionary) can accurately determine HLA alleles with 6-digit precision from NGS data (fastq format). RNA-Seq data can also be applied.
+How to download HLA-HD:
+>HLA-HD (HLA typing from High-quality Dictionary) can accurately determine HLA alleles with 6-digit precision from NGS data (fastq format). RNA-Seq data can also be applied.
 
-Note that HLA-HD is freely available for academic purposes, non-commercial research purposes and six months limited term evaluation purpose to enter into commercial licenses. Kyoto University reserves its right to modify terms and restrictions at any time.'
+>Note that HLA-HD is freely available for academic purposes, non-commercial research purposes and six months limited term evaluation purpose to enter into commercial licenses. Kyoto University reserves its right to modify terms and restrictions at any time.
 
 To download the tool, you must submit a request through here: https://w3.genome.med.kyoto-u.ac.jp/HLA-HD/kyoto-hlahd-download-request-20250310/
 
