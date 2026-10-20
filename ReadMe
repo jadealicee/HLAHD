@@ -24,8 +24,10 @@ The custom-compiled execution binaries (hla_est, pick_up_allele, sam_to_fastq_re
 
 ________________________________________________________________________________________________
 
+
 Due to legacy server archiving changes on the IPD-IMGT/HLA FTP, the pre-indexed IPD-IMGT/HLA 3.15.0 reference files can be provided from me as a compressed bundle. I've been unable to locate them again on the online archive, so I've zipped up my dictionary and can send it over whenever required (1.8gb zipped, 30gb unzipped). If you can find the ref files yourself, that may be the easiest method, but I've some digging on both their archive and their github and have not been able to locate them. It's the hla_nuc.fasta and the hla_gen.fasta from the 3.15 version which is needed.
 
+[ignore this section - I've uploaded the raw files to this repository instead. Building dictionary explained in the following section below]
 Make sure to unzip this dictonary315 folder within the hlahd.1.7.1 directory
 
 tar -xzvf dictionary315.tar.gz
