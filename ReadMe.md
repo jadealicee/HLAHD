@@ -20,7 +20,7 @@ conda activate hlahd_env
 ```
 ________________________________________________________________________________________________
 
-The custom-compiled execution binaries (hla_est, pick_up_allele, sam_to_fastq_reverse, etc.) are pre-compiled and placed inside the bin/ directory of hla-hd. run_hlahd_cram.sh should append the /bin directory to your $PATH. 
+The custom-compiled execution binaries (hla_est, pick_up_allele, sam_to_fastq_reverse, etc.) are pre-compiled and placed inside the /bin/ directory of hla-hd. run_hlahd_cram.sh should append the /bin/ directory to your $PATH. 
 
 ________________________________________________________________________________________________
 
